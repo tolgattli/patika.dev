@@ -41,9 +41,8 @@ def reverse_func(input):
         input[x] = input[x][::-1]
     for x in range(0,len(input),1):
         for y in range(0,len(input)-1,1):
-            if input[y] > input[y]:
+            if input[y] > input[y+1]:
                 input[y+1],input[y] = input[y],input[y+1]        
-    input.reverse()
     print(input)
 
 
